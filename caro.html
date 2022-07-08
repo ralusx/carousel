@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEF7F4;
+    overflow: hidden;
+}
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 522px;
+        height: 581px;
+       background: #fff;
+       box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+       filter: blur(4px);
+      
+      }
+
+      .swiper-slide-active {
+        filter: blur(0px);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .testimonialBox {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+      }
+      
+      .content {
+        padding-top: 30px;
+      }
+      .content h4 {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: -0.02em;
+        color: #22483F;
+      }
+
+      .content p {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+       color: #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="testimonialBox"> 
+            <img src="images/card 1.jpg" alt="">
+            <div class="content">
+                <h4>Victoria Edet</h4>
+                <p>COO Flutterwave</p>
+            </div>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox"> 
+            <div class="content">
+                <h4>Credible And Reliable</h4>
+                <p>The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. Citisquare is a super platform that simplifies the following services. Booking services for its users e.g spa and shortlets Scheduling vacations, conferences, corporate retreats, romantic getaways and other types of tours.</p>
+                <h5>Victoria Edet</h5>
+                <p>COO Flutterwave</p>
+                <p>245 Reviews</p>
+            </div>
+            <img src="images/card 2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonialBox"> 
+            <div class="content">
+                <h4>Credible And Reliable</h4>
+                <p>The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. Citisquare is a super platform that simplifies the following services. Booking services for its users e.g spa and shortlets Scheduling vacations, conferences, corporate retreats, romantic getaways and other types of tours.</p>
+                <h5>Victoria Edet</h5>
+                <p>COO Flutterwave</p>
+                <p>245 Reviews</p>
+            </div>
+            <img src="images/card 2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="testimonialBox"> 
+            <div class="content">
+                <h4>Credible And Reliable</h4>
+                <p>The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. Citisquare is a super platform that simplifies the following services. Booking services for its users e.g spa and shortlets Scheduling vacations, conferences, corporate retreats, romantic getaways and other types of tours.</p>
+                <h5>Victoria Edet</h5>
+                <p>COO Flutterwave</p>
+                <p>245 Reviews</p>
+            </div>
+            <img src="images/card 2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="testimonialBox"> 
+            <div class="content">
+                <h4>Credible And Reliable</h4>
+                <p>The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. Citisquare is a super platform that simplifies the following services. Booking services for its users e.g spa and shortlets Scheduling vacations, conferences, corporate retreats, romantic getaways and other types of tours.</p>
+                <h5>Victoria Edet</h5>
+                <p>COO Flutterwave</p>
+                <p>245 Reviews</p>
+            </div>
+            <img src="images/card 2.jpg" alt="">
+        </div>
+    </div>
+    </div>
+    
+  </div>
+    </section>
+   
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+       loop: true,
+      });
+    </script>
+  </body>
+</html>
